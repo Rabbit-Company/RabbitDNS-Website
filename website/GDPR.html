@@ -32,30 +32,90 @@
 	</head>
 
 	<body class="primaryBackgroundColor">
-		<div class="primaryBackgroundColor flex items-center justify-center pt-6 pb-6 px-4 sm:px-3 lg:px-8">
-			<div class="max-w-lg w-full space-y-6">
-				<form>
+		<nav class="primaryBackgroundColor">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
 					<div class="flex items-center">
-						<div class="relative w-full">
-							<input type="search" id="search" name="q" autocomplete="off" autocapitalize="off" autocorrect="off" class="tertiaryBackgroundColor tertiaryColor primaryBorderColor appearance-none rounded-l-lg block w-full px-3 py-2 border focus:outline-none focus:z-10 text-md" placeholder="Search the web without being tracked" required>
+						<div class="flex-shrink-0">
+							<img class="block h-8 w-auto" src="images/logo.png" alt="Rabbit Company">
 						</div>
-						<div>
-							<button type="submit" class="primaryButton relative inline-flex items-center px-2 py-2 shadow-sm rounded-r-md text-md focus:outline-none">
-								<svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-								<span class="sr-only">Search</span>
-							</button>
+						<div class="hidden sm:block sm:ml-6">
+							<div class="flex space-x-4">
+								<a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+								<a href="install.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Installation</a>
+								<a href="donation.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Donation</a>
+								<a href="affiliates.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Affiliates</a>
+								<a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+							</div>
 						</div>
 					</div>
-				</form>
+					<div class="-mr-2 flex sm:hidden">
+						<button id="main-menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+							<span class="sr-only">Open main menu</span>
+							<svg id="main-menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+						</button>
+					</div>
+				</div>
 			</div>
-		</div>
+
+			<div class="sm:hidden hidden" id="mobile-menu">
+				<div class="px-2 pt-2 pb-3 space-y-1">
+					<a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+					<a href="install.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Installation</a>
+					<a href="donation.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Donation</a>
+					<a href="affiliates.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Affiliates</a>
+					<a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+				</div>
+			</div>
+		</nav>
 
 		<div class="secondaryBackgroundColor relative">
 			<div class="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 				<h1 class="text-2xl font-extrabold tracking-tight tertiaryColor md:text-3xl lg:text-4xl">General Data Protection Regulation (GDPR)</h1>
-				<p class="mt-6 max-w-3xl text-lg secondaryColor">At Rabbit Search, we take your privacy very seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">At Rabbit DNS, we take your privacy very seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					Rabbit Search does not collect any personal data or use cookies. Therefore, we do not process any personal data within the meaning of the GDPR. You are free to use our service without providing any personal data. As we do not collect any data or use cookies, we have no access to or control over any personal data you may provide to third-party websites that are linked from our search results. We encourage you to review the privacy policies of these third-party websites before providing them with any personal data.
+					<b class="tertiaryColor">1. Data Controller</b></br>
+					The data controller for Rabbit DNS is <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a>, 1309 Coffeen Avenue STE 1200, Sheridan 82801, Wyoming USA, <a href="mailto:info@rabbit-company.com" class="primaryColor" target="_blank">info@rabbit-company.com</a>. We are responsible for ensuring that Rabbit DNS complies with the GDPR.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">2. Legal Basis for Processing</b></br>
+					Rabbit DNS does not process any personal data, and therefore does not require a legal basis for processing personal data under the GDPR.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">3. Data Subjects' Rights</b></br>
+					Data subjects have the following rights under the GDPR:
+					<ul class="mt-6 max-w-3xl text-lg secondaryColor list-disc">
+						<li>The right to be informed about the collection and use of their personal data. Rabbit DNS has informed data subjects through our Privacy Policy that we do not collect any personal data.</li>
+						<li>The right of access to their personal data. As Rabbit DNS does not collect any personal data, data subjects do not have any personal data to access.</li>
+						<li>The right to rectification of their personal data. As Rabbit DNS does not collect any personal data, data subjects do not have any personal data to rectify.</li>
+						<li>The right to erasure of their personal data. As Rabbit DNS does not collect any personal data, data subjects do not have any personal data to erase.</li>
+						<li>The right to restrict processing of their personal data. As Rabbit DNS does not collect any personal data, data subjects do not have any personal data to restrict processing of.</li>
+						<li>The right to data portability of their personal data. As Rabbit DNS does not collect any personal data, data subjects do not have any personal data to port.</li>
+						<li>The right to object to processing of their personal data. As Rabbit DNS does not collect any personal data, data subjects do not have any personal data to object to processing of.</li>
+						<li>The right to lodge a complaint with a supervisory authority. Data subjects have the right to lodge a complaint with a supervisory authority if they believe their rights under the GDPR have been violated.</li>
+					</ul>
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">4. Data Security</b></br>
+					Rabbit DNS uses industry-standard security measures to protect user data. All DNS requests are encrypted with HTTPS to ensure the confidentiality and integrity of user data.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">5. Data Breaches</b></br>
+					In the unlikely event of a data breach, Rabbit DNS will take all necessary steps to comply with the GDPR's breach notification requirements.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">6. Data Transfers</b></br>
+					Rabbit DNS does not transfer any personal data outside of the European Economic Area (EEA). As we do not collect any personal data, we do not transfer any personal data at all.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">7. Changes to GDPR</b></br>
+					We may update this GDPR from time to time by posting a new version on Rabbit DNS. You should check this page occasionally to ensure you are happy with any changes.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">8. Contact Us</b></br>
+					If you have any questions or concerns about this GDPR, please contact us at <a href="mailto:info@rabbit-company.com" class="primaryColor" target="_blank">info@rabbit-company.com</a>.
 				</p>
 			</div>
 		</div>
