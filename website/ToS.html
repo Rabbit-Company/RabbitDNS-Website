@@ -32,60 +32,85 @@
 	</head>
 
 	<body class="primaryBackgroundColor">
-		<div class="primaryBackgroundColor flex items-center justify-center pt-6 pb-6 px-4 sm:px-3 lg:px-8">
-			<div class="max-w-lg w-full space-y-6">
-				<form>
+		<nav class="primaryBackgroundColor">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
 					<div class="flex items-center">
-						<div class="relative w-full">
-							<input type="search" id="search" name="q" autocomplete="off" autocapitalize="off" autocorrect="off" class="tertiaryBackgroundColor tertiaryColor primaryBorderColor appearance-none rounded-l-lg block w-full px-3 py-2 border focus:outline-none focus:z-10 text-md" placeholder="Search the web without being tracked" required>
+						<div class="flex-shrink-0">
+							<img class="block h-8 w-auto" src="images/logo.png" alt="Rabbit Company">
 						</div>
-						<div>
-							<button type="submit" class="primaryButton relative inline-flex items-center px-2 py-2 shadow-sm rounded-r-md text-md focus:outline-none">
-								<svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-								<span class="sr-only">Search</span>
-							</button>
+						<div class="hidden sm:block sm:ml-6">
+							<div class="flex space-x-4">
+								<a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+								<a href="install.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Installation</a>
+								<a href="donation.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Donation</a>
+								<a href="affiliates.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Affiliates</a>
+								<a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+							</div>
 						</div>
 					</div>
-				</form>
+					<div class="-mr-2 flex sm:hidden">
+						<button id="main-menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+							<span class="sr-only">Open main menu</span>
+							<svg id="main-menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+						</button>
+					</div>
+				</div>
 			</div>
-		</div>
+
+			<div class="sm:hidden hidden" id="mobile-menu">
+				<div class="px-2 pt-2 pb-3 space-y-1">
+					<a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+					<a href="install.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Installation</a>
+					<a href="donation.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Donation</a>
+					<a href="affiliates.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Affiliates</a>
+					<a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+				</div>
+			</div>
+		</nav>
 
 		<div class="secondaryBackgroundColor relative">
 			<div class="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 				<h1 class="text-2xl font-extrabold tracking-tight tertiaryColor md:text-3xl lg:text-4xl">Terms of Service</h1>
-				<p class="mt-6 max-w-3xl text-lg secondaryColor">Welcome to Rabbit Search! By accessing and using our website at <a href="https://rabbitsearch.org" class="primaryColor">https://rabbitsearch.org</a> (the "Site"), you agree to be bound by these Terms of Service ("Terms"). Please read them carefully before using our services.</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">Welcome to Rabbit DNS! Rabbit DNS is a privacy-focused Domain Name System (DNS) service that operates over HTTPS (DoH) and does not collect any user data. These Terms of Service ("Terms") govern your use of Rabbit DNS. By using Rabbit DNS, you agree to these Terms.</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">1. Overview</b></br>
-					Rabbit Search is a meta search engine that provides users with a way to search for information on the internet. <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> owns and operates Rabbit Search. By using the Site, you agree to abide by these Terms and our Privacy Policy.
+					<b class="tertiaryColor">1. Service Description</b></br>
+					Rabbit DNS is a DNS resolver that provides users with a privacy-focused and secure method of resolving domain names. Rabbit DNS does not collect any user data, and all DNS requests are encrypted with HTTPS.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">2. Intellectual Property</b></br>
-					The Site and all of its content, including text, graphics, logos, and images, are the property of <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> and are protected by United States and international copyright laws. You may use the Site only for your personal, non-commercial use. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products or services obtained from the Site.
+					<b class="tertiaryColor">2. Acceptable Use</b></br>
+					You may use Rabbit DNS for lawful purposes only. You agree not to use Rabbit DNS for any illegal, harmful, or fraudulent activities.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">3. Privacy</b></br>
-					Rabbit Search is designed to be privacy focused and does not collect any personal data. For more information on how we collect and use data, please see our Privacy Policy.
+					<b class="tertiaryColor">3. Ownership and Intellectual Property</b></br>
+					Rabbit DNS is owned and operated by <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a>. All content and materials on Rabbit DNS, including text, graphics, logos, and images, are protected by copyright and other intellectual property laws. You may not use Rabbit DNS content or materials without the prior written consent of <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a>.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">4. Disclaimers and Limitations of Liability</b></br>
-					The information provided by Rabbit Search is for general informational purposes only. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the Site or the information, products, services, or related graphics contained on the Site for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
-					</br></br>
-					In no event will <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> be liable for any loss or damage, including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of the Site.
+					<b class="tertiaryColor">4. Limitation of Liability</b></br>
+					Rabbit DNS is provided on an "as is" and "as available" basis. <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> makes no representations or warranties of any kind, express or implied, as to the operation of Rabbit DNS or the information, content, materials, or products included on Rabbit DNS. To the full extent permissible by applicable law, <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> disclaims all warranties, express or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose.
+				</br></br>
+					In no event shall <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use Rabbit DNS, even if <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> has been notified orally or in writing of the possibility of such damage.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
 					<b class="tertiaryColor">5. Indemnification</b></br>
 					You agree to indemnify and hold <a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a>, its subsidiaries, affiliates, officers, agents, and other partners and employees, harmless from any loss, liability, claim, or demand, including reasonable attorney's fees, made by any third party due to or arising out of your use of the Site in violation of these Terms or your violation of any law or the rights of a third party.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">6. Governing Law</b></br>
-					These Terms shall be governed and construed in accordance with the laws of the State of Wyoming, without giving effect to any principles of conflicts of law.
+					<b class="tertiaryColor">6. Modifications to Terms</b></br>
+					<a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> may modify these Terms at any time by posting the modified Terms on Rabbit DNS. Your continued use of Rabbit DNS after the posting of the modified Terms constitutes your agreement to the modified Terms.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">7. Changes to these Terms</b></br>
-					We reserve the right to modify these Terms at any time. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms.
+					<b class="tertiaryColor">7. Termination</b></br>
+					<a href="https://rabbit-company.com" class="primaryColor" target="_blank">Rabbit Company LLC</a> may terminate your access to Rabbit DNS at any time, with or without cause, and without notice to you.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">8. Contact Us</b></br>
+					<b class="tertiaryColor">8. Governing Law and Jurisdiction</b></br>
+					These Terms shall be governed by and construed in accordance with the laws of Wyoming, without regard to its conflicts of law provisions. You agree to submit to the exclusive jurisdiction of the courts located in Wyoming to resolve any legal matter arising from these Terms.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">9. Contact Us</b></br>
 					If you have any questions about these Terms, please contact us at <a href="mailto:info@rabbit-company.com" class="primaryColor" target="_blank">info@rabbit-company.com</a>.
 				</p>
 			</div>
