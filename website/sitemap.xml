@@ -8,6 +8,30 @@
 </url>
 
 <url>
+  <loc>https://rabbitdns.org/install</loc>
+  <changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://rabbitdns.org/donation</loc>
+  <changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://rabbitdns.org/affiliates</loc>
+  <changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://rabbitdns.org/contact</loc>
+  <changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+
+<url>
   <loc>https://rabbitdns.org/ToS</loc>
   <changefreq>weekly</changefreq>
 	<priority>0.8</priority>
