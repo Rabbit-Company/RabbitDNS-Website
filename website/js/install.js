@@ -35,6 +35,19 @@ document.getElementById('firefox').addEventListener('click', () => {
 	show('dialog');
 });
 
+document.getElementById('vivaldi').addEventListener('click', () => {
+	document.getElementById('dialog-title').innerText = "Vivaldi";
+	document.getElementById('dialog-text').innerHTML = `
+	<ul class='list-decimal'>
+		<li>Go to <b>vivaldi://settings/security</b>.</li>
+		<li>Enable the <b>Use secure DNS</b> switch.</li>
+		<li>Select <b>with Custom</b> from drop-down menu.</li>
+		<li>Type <b>https://security.rabbitdns.org/dns-query</b></li>
+	</ul>
+	`;
+	show('dialog');
+});
+
 document.getElementById('opera').addEventListener('click', () => {
 	document.getElementById('dialog-title').innerText = "Opera";
 	document.getElementById('dialog-text').innerHTML = `
