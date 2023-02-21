@@ -65,3 +65,17 @@ document.getElementById('brave').addEventListener('click', () => {
 	`;
 	show('dialog');
 });
+
+document.getElementById('edge').addEventListener('click', () => {
+	document.getElementById('dialog-title').innerText = "Microsoft Edge";
+	document.getElementById('dialog-text').innerHTML = `
+	<ul class='list-decimal'>
+		<li>Go to <b>edge://settings/privacy</b>.</li>
+		<li>Scroll down to the <b>Security</b> section.</li>
+		<li>Make sure the <b>Use secure DNS</b> option is enabled.</li>
+		<li>Select <b>Choose a service provider</b></li>
+		<li>Type <b>https://security.rabbitdns.org/dns-query</b></li>
+	</ul>
+	`;
+	show('dialog');
+});
