@@ -16,3 +16,21 @@ document.getElementById('chrome').addEventListener('click', () => {
 	`;
 	show('dialog');
 });
+
+document.getElementById('firefox').addEventListener('click', () => {
+	document.getElementById('dialog-title').innerText = "Mozilla Firefox";
+	document.getElementById('dialog-text').innerHTML = `
+	<ul class='list-decimal'>
+		<li>Click the menu button.</li>
+		<li>Select <b>Settings</b>.</li>
+		<li>In the General menu, scroll down to access <b>Network Settings</b>.</li>
+		<li>Click on the <b>Settings button</b>.</li>
+		<li>Click <b>Enable DNS-over-HTTPS</b>. Choose <b>Custom</b>.</li>
+		<li>Type <b>https://security.rabbitdns.org/dns-query</b></li>
+		<li>Press <b>OK</b> to apply.</li>
+	</ul>
+	<br/>
+	You may also type <b>about:preferences#general</b> as url to open the security options
+	`;
+	show('dialog');
+});
