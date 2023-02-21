@@ -45,7 +45,23 @@ document.getElementById('opera').addEventListener('click', () => {
 		<li>Make sure to enable <b>Use DNS-over-HTTPS instead of the system's DNS settings</b></li>
 		<li>Type <b>https://security.rabbitdns.org/dns-query</b></li>
 	</ul>
+	`;
+	show('dialog');
+});
+
+document.getElementById('brave').addEventListener('click', () => {
+	document.getElementById('dialog-title').innerText = "Brave";
+	document.getElementById('dialog-text').innerHTML = `
+	<ul class='list-decimal'>
+		<li>Click the menu button in the top-right corner of your brave window.</li>
+		<li>Navigate to <b>Settings</b> Top Menu.</li>
+		<li>On the left side of the menu, Click on <b>Privacy and security</b>.</li>
+		<li>Select <b>Security</b> inside Privacy and security section</li>
+		<li>Enable <b>Use secure DNS.</b> Click <b>With Custom</b>.</li>
+		<li>Type <b>https://security.rabbitdns.org/dns-query</b></li>
+	</ul>
 	<br/>
+	You may also type <b>brave://settings/security</b> as url to open the security options
 	`;
 	show('dialog');
 });
