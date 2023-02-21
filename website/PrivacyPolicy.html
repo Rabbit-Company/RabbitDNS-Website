@@ -32,50 +32,75 @@
 	</head>
 
 	<body class="primaryBackgroundColor">
-		<div class="primaryBackgroundColor flex items-center justify-center pt-6 pb-6 px-4 sm:px-3 lg:px-8">
-			<div class="max-w-lg w-full space-y-6">
-				<form>
+		<nav class="primaryBackgroundColor">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
 					<div class="flex items-center">
-						<div class="relative w-full">
-							<input type="search" id="search" name="q" autocomplete="off" autocapitalize="off" autocorrect="off" class="tertiaryBackgroundColor tertiaryColor primaryBorderColor appearance-none rounded-l-lg block w-full px-3 py-2 border focus:outline-none focus:z-10 text-md" placeholder="Search the web without being tracked" required>
+						<div class="flex-shrink-0">
+							<img class="block h-8 w-auto" src="images/logo.png" alt="Rabbit Company">
 						</div>
-						<div>
-							<button type="submit" class="primaryButton relative inline-flex items-center px-2 py-2 shadow-sm rounded-r-md text-md focus:outline-none">
-								<svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-								<span class="sr-only">Search</span>
-							</button>
+						<div class="hidden sm:block sm:ml-6">
+							<div class="flex space-x-4">
+								<a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+								<a href="install.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Installation</a>
+								<a href="donation.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Donation</a>
+								<a href="affiliates.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Affiliates</a>
+								<a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+							</div>
 						</div>
 					</div>
-				</form>
+					<div class="-mr-2 flex sm:hidden">
+						<button id="main-menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+							<span class="sr-only">Open main menu</span>
+							<svg id="main-menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+						</button>
+					</div>
+				</div>
 			</div>
-		</div>
+
+			<div class="sm:hidden hidden" id="mobile-menu">
+				<div class="px-2 pt-2 pb-3 space-y-1">
+					<a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+					<a href="install.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Installation</a>
+					<a href="donation.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Donation</a>
+					<a href="affiliates.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Affiliates</a>
+					<a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+				</div>
+			</div>
+		</nav>
 
 		<div class="secondaryBackgroundColor relative">
 			<div class="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 				<h1 class="text-2xl font-extrabold tracking-tight tertiaryColor md:text-3xl lg:text-4xl">Privacy Policy</h1>
-				<p class="mt-6 max-w-3xl text-lg secondaryColor">At Rabbit Search, we take your privacy very seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">At Rabbit DNS, we take your privacy very seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">1. Information We Collect</b></br>
-					Rabbit Search is designed to be privacy focused and does not collect any personal data. We do not collect any personally identifiable information, such as your name, email address, or IP address. We also do not use cookies or any other tracking technologies.
+					<b class="tertiaryColor">1. Data Collection</b></br>
+					Rabbit DNS does not collect any user data. We do not log IP addresses, DNS queries, or any other user data.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">2. How We Use Your Information</b></br>
-					As we do not collect any personal data, we do not use your information in any way. We do not sell, rent, or share your personal information with third parties.
+					<b class="tertiaryColor">2. Use of Cookies</b></br>
+					Rabbit DNS does not use any cookies or other tracking technologies.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">3. Information Security</b></br>
-					We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. We use Cloudflare for hosting and rely on their security measures to protect our website and any data that we collect. However, please note that no data transmission over the internet can be guaranteed to be completely secure. Therefore, we cannot guarantee the security of any information that you provide to us.
+					<b class="tertiaryColor">3. Third-Party Services</b></br>
+					Rabbit DNS does not share any user data with third-party services.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">4. Children's Privacy</b></br>
-					Our website is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under the age of 13. If we become aware that we have collected personal information from a child under the age of 13, we will take steps to delete the information as soon as possible.
+					<b class="tertiaryColor">4. Data Security</b></br>
+					Rabbit DNS uses industry-standard security measures to protect user data. All DNS requests are encrypted with HTTPS to ensure the confidentiality and integrity of user data.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">5. Changes to this Privacy Policy</b></br>
-					We reserve the right to modify this Privacy Policy at any time. If we make any changes to this policy, we will post the updated version on our website and update the "last updated" date at the top of the page.
+					<b class="tertiaryColor">5. Children's Privacy</b></br>
+					Rabbit DNS is not directed to children under the age of 13. We do not knowingly collect any personal information from children under the age of 13. If you are a parent or guardian and you believe that your child has provided us with personal information, please contact us at <a href="mailto:info@rabbit-company.com" class="primaryColor" target="_blank">info@rabbit-company.com</a> and we will delete the information from our systems.
 				</p>
 				<p class="mt-6 max-w-3xl text-lg secondaryColor">
-					<b class="tertiaryColor">6. Contact Us</b></br>
+					<b class="tertiaryColor">6. Changes to Privacy Policy</b></br>
+					We may update this Privacy Policy from time to time by posting a new version on Rabbit DNS. You should check this page occasionally to ensure you are happy with any changes.
+				</p>
+				<p class="mt-6 max-w-3xl text-lg secondaryColor">
+					<b class="tertiaryColor">7. Contact Us</b></br>
 					If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:info@rabbit-company.com" class="primaryColor" target="_blank">info@rabbit-company.com</a>.
 				</p>
 			</div>
