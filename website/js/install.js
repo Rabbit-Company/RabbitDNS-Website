@@ -34,3 +34,18 @@ document.getElementById('firefox').addEventListener('click', () => {
 	`;
 	show('dialog');
 });
+
+document.getElementById('opera').addEventListener('click', () => {
+	document.getElementById('dialog-title').innerText = "Opera";
+	document.getElementById('dialog-text').innerHTML = `
+	<ul class='list-decimal'>
+		<li>Click on the Opera icon to open the browser's menu.</li>
+		<li>Pick <b>Settings</b> from the menu.</li>
+		<li>In Settings, type <b>dns</b> on top search bar.</li>
+		<li>Make sure to enable <b>Use DNS-over-HTTPS instead of the system's DNS settings</b></li>
+		<li>Type <b>https://security.rabbitdns.org/dns-query</b></li>
+	</ul>
+	<br/>
+	`;
+	show('dialog');
+});
