@@ -29,12 +29,10 @@
 		<link id="css-theme" type="text/css" rel="stylesheet" href="./css/themes/dark.css">
 		<link rel="canonical" href="https://rabbitdns.org" />
 		<script src="./js/header.js"></script>
-		<!--
-		<script src="./js/am5.min.js"></script>
-		<script src="./js/map.js"></script>
-		<script src="./js/worldLow.min.js"></script>
-		<script src="./js/animated.js"></script>
-		-->
+		<script src="./js/d3.min.js"></script>
+		<script src="./js/topojson.min.js"></script>
+		<script src="./js/datamaps.world.min.js"></script>
+		<script src="./js/datamaps.fading-bubbles.js"></script>
 	</head>
 
 	<body class="secondaryBackgroundColor">
@@ -208,7 +206,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div id="worldmap" class="w-full h-[500px]"></div> -->
+			<div id="worldmap" class="relative left-2/4 translate-x-[-50%] w-full h-auto"></div>
 		</section>
 
 		<footer class="primaryBackgroundColor">
@@ -266,6 +264,6 @@
 		</footer>
 
 		<script src="./js/default-functions.js"></script>
-		<!-- <script src="./js/index.js"></script> -->
+		<script src="./js/index.js"></script>
 	</body>
 </html>
